@@ -7,7 +7,7 @@ def clock_angle(time)
       hour_degree = (hour * 30) + (minute * 0.5)
         angle = (hour_degree - min_degree)
       if angle > 180
-        angle -= 180
+        angle = 360 - angle
       end
     angle
   end
